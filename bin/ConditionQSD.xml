@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Opcodes>
+ <Opcode id="0x0">
+    <name>[00]Quest</name>
+    <Struct>
+	  <data type="Int32">Quest</data>
+    </Struct>
+  </Opcode>
+
+ 
+ <Opcode id="0x1">
+    <name>[01]Quest Variable</name>
+    <Struct>
+	  <data type="Int32">Cnt</data>
+	  <data type="Int16">Var ID</data>
+	  <data type="Int16">Var Type</data>
+	  <data type="Int16">Value</data>
+	  <data type="Operator16">Operator</data>
+    </Struct>
+  </Opcode>
+ 
+ <Opcode id="0x2">
+    <name>[02]Char Variable</name>
+    <Struct>
+	  <data type="Int32">Cnt</data>
+	  <data type="Int16">Var ID</data>
+	  <data type="Int16">Var Type(3= episode, 4= Job, 5= Planet, 6 = Union)</data>
+	  <data type="Int16">Value</data>
+	  <data type="Operator16">Operator</data>
+    </Struct>
+  </Opcode>
+  
+ <Opcode id="0x3">
+    <name>[03]Check Stats</name>
+    <Struct>
+	  <data type="Int32">Cnt</data>
+	  <data type="Int32">Ability ID</data>
+      <data type="Int32">Value</data>
+      <data type="Operator32">Operator</data>
+    </Struct>
+  </Opcode>
+  
+ <Opcode id="0x4">
+    <name>[04]Quest Item</name>
+    <Struct>
+	  <data type="Int32">Cnt</data>
+	  <data type="Int32">Item ID</data>
+      <data type="Int32">Where</data>
+      <data type="Int32">Amount</data>
+	  <data type="Operator32">Operator</data>
+    </Struct>
+  </Opcode> 
+  
+  <Opcode id="0x5">
+    <name>[05]Party????</name>
+    <Struct>
+	  <data type="Int32">IsLeader</data>
+      <data type="Int32">Level</data>
+	  <data type="Byte">Reversed</data>
+    </Struct>
+  </Opcode> 
+  
+  <Opcode id="0x6">
+    <name>[06]Position</name>
+    <Struct>
+	  <data type="Int32">Map ID</data>
+      <data type="Int32">X Coord</data>
+	  <data type="Int32">Y Coord</data>
+	  <data type="Int32">Z Coord</data>
+	  <data type="Int32">Distance</data>	  
+    </Struct>
+  </Opcode> 
+  <Opcode id="0x7">
+    <name>[07]No name</name>
+    <Struct>
+	  <data type="Int32">Time</data>
+      <data type="Int32">End Time</data>	 
+    </Struct>
+  </Opcode>
+  <Opcode id="0x8">
+    <name>[08]Quest Time</name>
+    <Struct>
+	  <data type="Int32">Quest Time</data>
+      <data type="Operator32">Operator</data>	 
+    </Struct>
+  </Opcode>
+  <Opcode id="0x9">
+    <name>[09]Check Skill</name>
+    <Struct>
+	  <data type="Int32">Skill ID</data>
+      <data type="Int32">Skill ID</data>
+	  <data type="Int32">Learned (0/1)</data>
+    </Struct>
+  </Opcode>
+   <Opcode id="0xA">
+    <name>[10]Random</name>
+    <Struct>
+	  <data type="Byte">LowPriceCnt</data>
+      <data type="Byte">HighPriceCnt</data>
+	  <data type="Int16">Unknow</data>
+    </Struct>
+  </Opcode>
+<Opcode id="0xC">
+    <name>[12]No name</name>
+    <Struct>
+	  <data type="Int16">Zone</data>
+      <data type="Int32">X Coord</data>
+	  <data type="Int32">Y Coord</data>
+	  <data type="Int32">Event ID</data>
+    </Struct>
+ </Opcode>
+  
+  <Opcode id="0xD">
+    <name>[13]Near NPC</name>
+    <Struct>
+	  <data type="Int32">NPC ID</data>
+    </Struct>
+ </Opcode>
+  <Opcode id="0xE">
+    <name>[14]Quest FLag</name>
+    <Struct>
+	  <data type="Int16">Flag ID</data>
+	  <data type="Byte">(0/1)</data>
+    </Struct>
+ </Opcode>
+ <Opcode id="0xF">
+    <name>[15]No name</name>
+    <Struct>
+	  <data type="Int16">Number1</data>
+	  <data type="Int16">Number2</data>
+    </Struct>
+ </Opcode>
+ 
+ <Opcode id="0x11">
+    <name>[17]No name</name>
+    <Struct>
+	  <data type="Int32">NpcNo</data>
+	  <data type="Int16">VarNo</data>
+	  <data type="Int16">VarVal</data>
+	  <data type="Int32">NpcNo2</data>
+	  <data type="Int16">VarNo2</data>
+	  <data type="Int16">VarVal2</data>
+	  <data type="Operator">Operator</data>
+    </Struct>
+ </Opcode>
+ 
+ <Opcode id="0x12">
+    <name>[18]Days Bounds</name>
+    <Struct>
+	  <data type="Byte">Date</data>
+	  <data type="Byte">Hour1</data>
+	  <data type="Byte">Min1</data>
+	  <data type="Byte">Hour2</data>
+	  <data type="Byte">Min2</data>
+	  
+    </Struct>
+ </Opcode>
+ 
+  <Opcode id="0x13">
+    <name>[19]WeekDays Bounds</name>
+    <Struct>
+	  <data type="Byte">WeekDays</data>
+	  <data type="Byte">Hour1</data>
+	  <data type="Byte">Min1</data>
+	  <data type="Byte">Hour2</data>
+	  <data type="Byte">Min2</data>
+	  
+    </Struct>
+ </Opcode>
+ 
+ <Opcode id="0x14">
+    <name>[20]No name</name>
+    <Struct>
+	  <data type="Int32">iNo1</data>
+	  <data type="Int32">iNo2</data>
+	</Struct>
+ </Opcode>
+ <Opcode id="0x15">
+    <name>[21]No name</name>
+    <Struct>
+	  <data type="Int32">SelObjType</data>
+	  <data type="Int32">iDistance</data>
+	</Struct>
+ </Opcode>
+ <Opcode id="0x16">
+    <name>[22]No name</name>
+    <Struct>
+	  <data type="Int16">X</data>
+	  <data type="Int16">Y</data>
+	</Struct>
+ </Opcode>
+  
+  <Opcode id="0x17">
+    <name>[23]In clan?</name>
+    <Struct>
+	  <data type="Int32">True = 1/ False =0</data>
+	  
+	</Struct>
+ </Opcode>
+ 
+ <Opcode id="0x18">
+    <name>[24]Clan rank</name>
+    <Struct>
+	  <data type="Int16">Value</data>
+	  <data type="Operator16">Operator</data>	  
+	</Struct>
+ </Opcode>
+ 
+ <Opcode id="0x19">
+    <name>[25]Clan Contribution</name>
+    <Struct>
+	  <data type="Int16">Value</data>
+	  <data type="Operator16">Operator</data>	  
+	</Struct>
+ </Opcode>
+ 
+ <Opcode id="0x1A">
+    <name>[26]Clan Grade</name>
+    <Struct>
+	  <data type="Int16">Value</data>
+	  <data type="Operator16">Operator</data>	  
+	</Struct>
+ </Opcode>
+  
+  <Opcode id="0x1B">
+    <name>[27]Clan Point</name>
+    <Struct>
+	  <data type="Int16">Value</data>
+	  <data type="Operator16">Operator</data>	  
+	</Struct>
+ </Opcode>
+  
+  <Opcode id="0x1C">
+    <name>[28]Clan Fund</name>
+    <Struct>
+	  <data type="Int32">Value</data>
+	  <data type="Operator16">Operator</data>	  
+	</Struct>
+ </Opcode>
+ 
+ <Opcode id="0x1D">
+    <name>[29]Clan Member Count</name>
+    <Struct>
+	  <data type="Int16">Value</data>
+	  <data type="Operator">Operator</data>	  
+	</Struct>
+ </Opcode>
+ 
+ <Opcode id="0x1E">
+    <name>[30]Clan Skill</name>
+    <Struct>
+	  <data type="Int16">Clan Skill1</data>
+	  <data type="Int16">Clan Skill2</data>
+	  <data type="Int32">Learned (yes=1 , no =0)</data>
+	</Struct>
+ </Opcode>
+  </Opcodes>

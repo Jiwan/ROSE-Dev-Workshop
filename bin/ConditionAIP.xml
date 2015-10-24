@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Opcodes>
+  <Opcode id="0x4000001">
+    <name>[01]Hold or Attack</name>
+    <Struct>
+     <data type="Byte">Not fight Or Delay</data>
+	 <data type="Empty24">Unknow</data>
+	
+	</Struct>
+  </Opcode>
+ 
+ <Opcode id="0x4000002">
+    <name>[02]Recv Damage</name>
+    <Struct>
+	  <data type="Int32">Damage</data>
+	  <data type="Byte">recv or give</data>
+	  <data type="Empty24">Unknow</data>
+	</Struct>
+  </Opcode>
+
+ 
+ <Opcode id="0x4000003">
+    <name>[03]Check Near</name>
+    <Struct>
+	  <data type="Int32">distance</data>
+	  <data type="Byte">is allied</data>
+	  <data type="Int16">level min</data>
+	  <data type="Int16">level max</data>
+	  <data type="Int16">char num</data>
+	   
+    </Struct>
+  </Opcode>
+ 
+ <Opcode id="0x4000004">
+    <name>[04]Spawn Distance</name>
+    <Struct>
+	  <data type="Int32">distance</data>
+	</Struct>
+  </Opcode>
+  
+ <Opcode id="0x4000005">
+    <name>[05]Target Distance</name>
+    <Struct>
+	  <data type="Int32">distance</data>
+	  <data type="Byte">more or less</data>
+      <data type="Empty24">Unknow</data>
+	  </Struct>
+  </Opcode>
+  
+ <Opcode id="0x4000006">
+    <name>[06]Target Ability</name>
+    <Struct>
+	  <data type="Byte">ability type</data>
+	  <data type="Empty24">Unknow</data>
+	  <data type="Int32">difference</data>
+      <data type="Byte">more or less</data>
+	  <data type="Empty24">Unknow</data>
+      
+    </Struct>
+  </Opcode> 
+  
+  <Opcode id="0x4000007">
+    <name>[07]HP %</name>
+    <Struct>
+	  <data type="Int32">hp</data>
+      <data type="Byte">more or less</data>
+	<data type="Empty24">Unknow</data>
+    </Struct>
+  </Opcode> 
+  
+  <Opcode id="0x4000008">
+    <name>[08]Random Chance</name>
+    <Struct>
+	  <data type="Byte">%</data>
+      <data type="Empty24">Unknow</data>
+    </Struct>
+  </Opcode> 
+  
+  <Opcode id="0x4000009">
+    <name>[09]Find Object2</name>
+    <Struct>
+	<data type="Int32">distance</data>
+    <data type="Int16">level min</data>
+	<data type="Int16">level max</data>
+	<data type="Byte">is allied</data>	
+    <data type="Empty24">Unknow</data>	   
+    </Struct>
+  </Opcode>
+  
+  
+   <Opcode id="0x40000B">
+    <name>[11]Target Destability</name>
+    <Struct>
+	  <data type="Byte">ability type</data>
+      <data type="Byte">more or less</data>
+	  <data type="Empty16">Unknow</data>
+	</Struct>
+  </Opcode>
+
+ <Opcode id="0x400000C">
+    <name>[12]Destability</name>
+    <Struct>
+	  <data type="Byte">ability type</data>
+	  <data type="Empty24">Unknow</data>
+	  <data type="Int32">value</data>      
+	  <data type="Byte">more or less</data>
+	  <data type="Empty24">Unknow</data>
+	</Struct>
+  </Opcode>
+  
+  <Opcode id="0x400000D">
+    <name>[13]Day night</name>
+    <Struct>
+	  <data type="Byte">when</data>
+	  <data type="Empty24">Unknow</data>
+     </Struct>
+ </Opcode>
+  
+  <Opcode id="0x400000E">
+    <name>[14]Target Magic Status</name>
+    <Struct>
+	  <data type="Byte">check target</data>
+	  <data type="Byte">status type</data>
+	  <data type="Byte">has status</data>
+	  <data type="Empty">Unknow</data>
+    </Struct>
+ </Opcode>
+ 
+  <Opcode id="0x400000F">
+    <name>[15]Object Var</name>
+    <Struct>
+	  <data type="Byte">var index</data>
+	  <data type="Empty16">Unknow</data>
+	  <data type="Int32">value</data>
+	  <data type="Operator32">operator</data>	  
+    </Struct>
+ </Opcode>
+ 
+ <Opcode id="0x40000010">
+    <name>[16]World Var</name>
+    <Struct>
+	   <data type="Byte">var index</data>
+	   <data type="Empty16">Unknow</data>
+	  <data type="Int32">value</data>
+	  <data type="Operator32">operator</data>	 
+    </Struct>
+ </Opcode>
+ 
+ <Opcode id="0x40000011">
+    <name>[17]Economy Var</name>
+    <Struct>
+	  <data type="Byte">var index</data>
+	  <data type="Empty16">Unknow</data>
+	  <data type="Int32">value</data>
+	  <data type="Operator32">operator</data>	
+    </Struct>
+ </Opcode>
+ 
+ <Opcode id="0x40000012">
+    <name>[18]Select Npc </name>
+    <Struct>
+	  <data type="Int32">npc id</data> 
+	  </Struct>
+ </Opcode>
+ 
+  <Opcode id="0x40000013">
+    <name>[19]Owner Distance</name>
+    <Struct>
+	  <data type="Int32">distance</data>
+	  <data type="Operator32">operator</data>
+	 </Struct>
+ </Opcode>
+ 
+ <Opcode id="0x40000014">
+    <name>[20]Zone Time</name>
+    <Struct>
+	  <data type="Int32">start time</data>
+	  <data type="Int32">end time</data>
+	</Struct>
+ </Opcode>
+ <Opcode id="0x40000015">
+    <name>[21]Ability</name>
+    <Struct>
+	  <data type="Byte">ability type</data>
+	  <data type="Empty24">Unknow</data>
+	  <data type="Int32">value</data>
+	  <data type="Operator32">operator</data>
+	</Struct>
+ </Opcode>
+ 
+  
+  <Opcode id="0x40000018">
+    <name>[24]World Time</name>
+    <Struct>
+	  <data type="Int32">start time</data>
+	  <data type="Int32">end time</data>
+	</Struct>
+ </Opcode>
+ 
+ <Opcode id="0x40000019">
+    <name>[25]Local Time Date</name>
+    <Struct>
+	  <data type="Byte">date</data>
+	     <data type="Byte">hour1</data>
+	     <data type="Byte">min1</data>
+	     <data type="Byte">hour2</data>
+         <data type="Byte">min2</data>
+		 <data type="Empty24">Unknow</data>
+	</Struct>
+ </Opcode>
+ 
+ <Opcode id="0x4000001A">
+    <name>[26]Local Time Day</name>
+    <Struct>
+	 <data type="Byte">weekday</data>
+	     <data type="Byte">hour1</data>
+	     <data type="Byte">min1</data>
+	     <data type="Byte">hour2</data>
+         <data type="Byte">min2</data>	  
+		 <data type="Empty24">Unknow</data>
+	</Struct>
+ </Opcode>
+ 
+ <Opcode id="0x4000001B">
+    <name>[27]Check Channel</name>
+    <Struct>
+	  <data type="Int16">min</data>
+	  <data type="Int16">max</data> 
+	  
+	</Struct>
+ </Opcode>
+  
+  <Opcode id="0x4000001C">
+    <name>[28]Find Object3</name>
+    <Struct>
+	  <data type="Int32">distance</data>
+	  <data type="Byte">is allied</data>
+	  <data type="Empty">Unknow</data>
+	  <data type="Int16">level min</data>
+	  <data type="Int16">level max</data>
+	  <data type="Int16">char num</data>
+	  <data type="Operator32">operator</data>
+	
+	</Struct>
+ </Opcode>
+  
+  <Opcode id="0x4000001D">
+    <name>[29]AI Variable</name>
+    <Struct>
+	  <data type="Int16">var index</data>
+	  <data type="Empty16">Unknow</data>
+	  
+	  <data type="Int32">value</data>	
+	<data type="Operator32">Operator</data>	
+	</Struct>
+ </Opcode>
+ 
+ </Opcodes>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{3B52310F-39A0-41FA-AFC0-620DCCA12540}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>ShinROSE Dev Workshop</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="Microsoft.DirectX" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.DirectX.Direct3D" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="Microsoft.DirectX.Direct3DX" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShinROSE_Dev_Workshop.AIP\AboutBox.cs" />
+    <Compile Include="ShinROSE_Dev_Workshop.AIP\Action.cs" />
+    <Compile Include="ShinROSE_Dev_Workshop.AIP\AIPEditorForm.cs" />
+    <Compile Include="ShinROSE_Dev_Workshop.AIP\ChangeDataDialog.cs" />
+    <Compile Include="ShinROSE_Dev_Workshop.AIP\Condition.cs" />
+    <Compile Include="ShinROSE_Dev_Workshop.AIP\Description.cs" />
+    <Compile Include="ShinROSE_Dev_Workshop.CHR\Character.cs" />
+    <Compile Include="ShinROSE_Dev_Workshop.CHR\CHRForm.cs" />
+    <Compile Include="ShinROSE_Dev_Workshop.CHR\Effect.cs" />
+    <Compile Include="ShinROSE_Dev_Workshop.CHR\ImportForm.cs" />
+    <Compile Include="ShinROSE_Dev_Workshop.CHR\Mesh.cs" />
+    <Compile Include="ShinROSE_Dev_Workshop.CHR\Motion.cs" />
+    <Compile Include="ShinROSE_Dev_Workshop.LTB\LTBForm.cs" />
+    <Compile Include="ShinROSE_Dev_Workshop.LTB\Userdialog.cs" />
+    <Compile Include="ShinROSE_Dev_Workshop.Properties\Resources.cs" />
+    <Compile Include="ShinROSE_Dev_Workshop.Properties\Settings.cs" />
+    <Compile Include="ShinROSE_Dev_Workshop.QSD\Action.cs" />
+    <Compile Include="ShinROSE_Dev_Workshop.QSD\AIPEditorForm.cs" />
+    <Compile Include="ShinROSE_Dev_Workshop.QSD\ChangeDataDialog.cs" />
+    <Compile Include="ShinROSE_Dev_Workshop.QSD\Condition.cs" />
+    <Compile Include="ShinROSE_Dev_Workshop.QSD\Description.cs" />
+    <Compile Include="ShinROSE_Dev_Workshop.STB.converter.Stb_to_xml_converter\Converter.cs" />
+    <Compile Include="ShinROSE_Dev_Workshop.STB.converter.Stb_to_xml_converter\MainForm.cs" />
+    <Compile Include="ShinROSE_Dev_Workshop.STB\STBForm.cs" />
+    <Compile Include="ShinROSE_Dev_Workshop.STB\Userdialog.cs" />
+    <Compile Include="ShinROSE_Dev_Workshop.STL\STLForm.cs" />
+    <Compile Include="ShinROSE_Dev_Workshop.STL\Userdialog.cs" />
+    <Compile Include="ShinROSE_Dev_Workshop.TSI\dds.cs" />
+    <Compile Include="ShinROSE_Dev_Workshop.TSI\TSIForm.cs" />
+    <Compile Include="ShinROSE_Dev_Workshop.VFS\MainForm.cs" />
+    <Compile Include="ShinROSE_Dev_Workshop.VFS\SearchForm.cs" />
+    <Compile Include="ShinROSE_Dev_Workshop.ZSC\Effect.cs" />
+    <Compile Include="ShinROSE_Dev_Workshop.ZSC\ImportForm.cs" />
+    <Compile Include="ShinROSE_Dev_Workshop.ZSC\Materiel.cs" />
+    <Compile Include="ShinROSE_Dev_Workshop.ZSC\Mesh.cs" />
+    <Compile Include="ShinROSE_Dev_Workshop.ZSC\Object.cs" />
+    <Compile Include="ShinROSE_Dev_Workshop.ZSC\ZSCForm.cs" />
+    <Compile Include="ShinROSE_Dev_Workshop\AboutBox.cs" />
+    <Compile Include="ShinROSE_Dev_Workshop\MyForm.cs" />
+    <Compile Include="ShinROSE_Dev_Workshop\Program.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ShinROSE_Dev_Workshop.AIP\AboutBox.resources" />
+    <EmbeddedResource Include="ShinROSE_Dev_Workshop.AIP\AIPEditorForm.resources" />
+    <EmbeddedResource Include="ShinROSE_Dev_Workshop.AIP\ChangeDataDialog.resources" />
+    <EmbeddedResource Include="ShinROSE_Dev_Workshop.AIP\Description.resources" />
+    <EmbeddedResource Include="ShinROSE_Dev_Workshop.CHR\CHRForm.resources" />
+    <EmbeddedResource Include="ShinROSE_Dev_Workshop.CHR\ImportForm.resources" />
+    <EmbeddedResource Include="ShinROSE_Dev_Workshop.LTB\LTBForm.resources" />
+    <EmbeddedResource Include="ShinROSE_Dev_Workshop.LTB\Userdialog.resources" />
+    <EmbeddedResource Include="ShinROSE_Dev_Workshop.Properties\Resources.resources" />
+    <EmbeddedResource Include="ShinROSE_Dev_Workshop.QSD\AIPEditorForm.resources" />
+    <EmbeddedResource Include="ShinROSE_Dev_Workshop.QSD\ChangeDataDialog.resources" />
+    <EmbeddedResource Include="ShinROSE_Dev_Workshop.QSD\Description.resources" />
+    <EmbeddedResource Include="ShinROSE_Dev_Workshop.STB.converter.Stb_to_xml_converter\MainForm.resources" />
+    <EmbeddedResource Include="ShinROSE_Dev_Workshop.STB\STBForm.resources" />
+    <EmbeddedResource Include="ShinROSE_Dev_Workshop.STB\Userdialog.resources" />
+    <EmbeddedResource Include="ShinROSE_Dev_Workshop.STL\STLForm.resources" />
+    <EmbeddedResource Include="ShinROSE_Dev_Workshop.STL\Userdialog.resources" />
+    <EmbeddedResource Include="ShinROSE_Dev_Workshop.TSI\TSIForm.resources" />
+    <EmbeddedResource Include="ShinROSE_Dev_Workshop.VFS\MainForm.resources" />
+    <EmbeddedResource Include="ShinROSE_Dev_Workshop.VFS\SearchForm.resources" />
+    <EmbeddedResource Include="ShinROSE_Dev_Workshop.ZSC\ImportForm.resources" />
+    <EmbeddedResource Include="ShinROSE_Dev_Workshop.ZSC\ZSCForm.resources" />
+    <EmbeddedResource Include="ShinROSE_Dev_Workshop\AboutBox.resources" />
+    <EmbeddedResource Include="ShinROSE_Dev_Workshop\MyForm.resources" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

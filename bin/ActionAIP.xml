@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Opcodes>
+ 
+  
+  <Opcode id="0xB000002">
+    <name>[02]Set Emotion</name>
+    <Struct>
+	  <data type="Byte">Action</data>
+	  <data type="Empty24">Unknow</data>	
+    </Struct>
+  </Opcode>
+  
+  <Opcode id="0xB000003">
+    <name>[03]NPC Message1</name>
+    <Struct>
+	  <data type="Int32">String ID</data>
+      <data type="Empty24">Unknow</data>
+    </Struct>
+  </Opcode>
+  
+  <Opcode id="0xB000004">
+    <name>[04]Move From Cur Pos To Any Dir</name>
+    <Struct>
+	  <data type="Int32">Distance</data>
+     <data type="Byte">Speed</data>
+	 <data type="Empty24">Unknow</data>
+	</Struct>
+  </Opcode>
+
+  <Opcode id="0xB000005">
+    <name>[05]Move From Spawn To Any Dir </name>
+    <Struct>
+	  <data type="Int32">Distance</data>
+     <data type="Byte">Speed</data>
+	 <data type="Empty24">Unknow</data>
+    </Struct>
+  </Opcode>
+  
+  <Opcode id="0xB000006">
+    <name>[06]Move Up To 200 From Cur Pos To Any Dir</name>
+    <Struct>
+	  <data type="Byte">Speed</data>
+	  <data type="Empty24">Unknow</data>
+      
+    </Struct>
+  </Opcode>
+  
+  <Opcode id="0xB000007">
+    <name>[07]Find And Atk Obj Based On Abil </name>
+    <Struct>
+	  <data type="Int32">Distance</data>
+      <data type="Byte">Ability Type</data>
+	  <data type="Byte">More or Less</data>
+	  <data type="Empty16">Unknow</data>
+    </Struct>
+  </Opcode>
+  
+  
+  <Opcode id="0xB000009">
+    <name>[09]Move Away From Target</name>
+    <Struct>
+	  <data type="Int32">Distance</data>
+     <data type="Byte">Speed</data>
+	 <data type="Empty24">Unknow</data>
+    </Struct>
+  </Opcode>
+  
+  <Opcode id="0xB00000A">
+    <name>[10]Change Into Monster</name>
+    <Struct>
+	  <data type="Int32">Monster</data>
+	  <data type="Empty16">Unknow</data>
+      
+    </Struct>
+  </Opcode>
+  <Opcode id="0xB00000B">
+    <name>[11]Create Pet With in 150</name>
+    <Struct>
+	  <data type="Int16">Monster</data>
+	  <data type="Empty16">Unknow</data>
+      
+    </Struct>
+  </Opcode>
+  <Opcode id="0xB00000C">
+    <name>[12]Make Same Team Mobs</name>
+    <Struct>
+	  <data type="Int32">Distance</data>
+      <data type="Int32">Num Of Monster</data>
+    </Struct>
+  </Opcode>
+  
+  <Opcode id="0x100000F">
+    <name>[15]Unknown</name>
+    <Struct>
+	  <data type="Int32">Distance</data>
+	</Struct>
+  </Opcode> 
+
+ <Opcode id="0x10000011">
+    <name>[17]Unknown</name>
+    <Struct>
+	  <data type="Int32">Distance</data>
+	</Struct>
+  </Opcode> 
+
+ 
+
+<Opcode id="0x1000012">
+    <name>[18]Drop Item</name>
+    <Struct>
+	  <data type="Int16">item0</data>
+	  <data type="Int16">item1</data>
+	  <data type="Int16">item2</data>
+	  <data type="Int16">item3</data>
+	  <data type="Int16">item4</data>
+	<data type="Int16">No name</data>
+	<data type="Int32">To Owner</data>
+	</Struct>
+  </Opcode>     
+  
+  <Opcode id="0x1000013">
+    <name>[19]Spawn Monster (4)</name>
+    <Struct>
+	  <data type="Int16">Monster</data>
+	  <data type="Int16">How Many</data>
+	  <data type="Int32">Distance</data>  
+	</Struct>
+  </Opcode>     
+  
+ 
+  
+  <Opcode id="0x1000015">
+    <name>[21]Spawn Monster (5)</name>
+    <Struct>
+	  <data type="Int16">Monster</data>
+	  <data type="Byte">Position</data>	  
+	   <data type="Empty">Unknow</data>	
+	  <data type="Int32">Distance</data>	  
+	</Struct>
+   </Opcode>
+  
+  <Opcode id="0x1000019">
+    <name>[25]Do Skill</name>
+    <Struct>
+	  <data type="Byte">Target</data>
+	   <data type="Empty24">Unknow</data>
+	  <data type="Int16">Skill</data>	  
+	   <data type="Int16">Motion</data>	
+	</Struct>
+  </Opcode>
+  
+   <Opcode id="0x100001A">
+    <name>[26]Set Variable (1)</name>
+    <Struct>
+	  <data type="Int16">Var Index</data>
+	  <data type="Empty16">Unknow</data>	 
+ <data type="Int32">Value</data>	 
+ <data type="Operator32">operator</data>
+ 
+	</Struct>
+  </Opcode>
+  
+  <Opcode id="0x100001B">
+    <name>[27]Set World Variable </name>
+    <Struct>
+	  <data type="Int16">Variable Number</data>
+	    <data type="Empty16">Unknow</data>
+		  <data type="Int32">Value</data>
+	  <data type="Operator32">Operator</data>	  
+	</Struct>
+  </Opcode>
+  
+  <Opcode id="0x100001C">
+    <name>[28]Set Enconomy Variable</name>
+    <Struct>
+	  <data type="Byte">Message Type</data>
+	  <data type="Empty24">Unknow</data>
+	  <data type="Int32">String ID</data>
+	</Struct>
+  </Opcode>
+
+    
+    
+	
+  
+
+  
+    <Opcode id="0x1000021">
+    <name>[32]Set PK Flag</name>
+    <Struct>
+	  <data type="Int16">ZoneID</data>
+	  <data type="byte">On Or Off</data>	  
+	  <data type="Empty">Unknow</data>
+	  
+	</Struct>
+  </Opcode>
+  </Opcodes>

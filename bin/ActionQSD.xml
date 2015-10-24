@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Opcodes>
+ <Opcode id="0x1000000">
+    <name>[00]Quest</name>
+    <Struct>
+	  <data type="Int32">Quest ID</data>
+      <data type="Int32">Action</data>
+      </Struct>
+  </Opcode>
+   <Opcode id="0x1000001">
+    <name>[01]Quest Item</name>
+    <Struct>
+	  <data type="Int32">Item ID</data>
+      <data type="Byte">Action (take = 0, give= 1)</data>
+	  <data type="Byte">Unknow</data>
+	  <data type="Int16">Amount</data>
+	  <data type="Int32">Party(no = 0, yes = 1)</data>
+      </Struct>
+  </Opcode>
+  <Opcode id="0x1000002">
+    <name>[02]Quest Variable</name>
+    <Struct>
+	  <data type="Int32">Cnt</data>
+      <data type="Int16">Var ID</data>
+	  <data type="Int16">Var type</data>
+	  <data type="Int16">Value</data>
+	  <data type="Operator16">Operator</data>
+      </Struct>
+  </Opcode>
+  
+  <Opcode id="0x1000003">
+    <name>[03]Set stat</name>
+    <Struct>
+	  <data type="Int32">Cnt</data>
+      <data type="Int32">Ability ID</data>
+      <data type="Int32">Value</data>
+	  <data type="Operator32">Operator</data>
+    </Struct>
+  </Opcode>
+  
+  <Opcode id="0x1000004">
+    <name>[04]Char variable</name>
+    <Struct>
+	  <data type="Int32">Cnt</data>
+      <data type="Int16">Var ID</data>
+      <data type="Byte">Unknow ( Don't touch)</data>
+	  <data type="Byte">Var type</data>
+	  <data type="Int16">Value</data>
+	  <data type="Operator16">Operator</data>
+    </Struct>
+  </Opcode>
+
+  <Opcode id="0x1000005">
+    <name>[05]Reward</name>
+    <Struct>
+	  <data type="Byte">Type(exp =0 , zulie = 1, item = 2)</data>
+      <data type="Byte">btEquation</data>
+      <data type="Int16">Unknow ( Don't touch)</data>
+	  <data type="Int32">Amount</data>
+	  <data type="Int32">Item ID</data>
+	  <data type="Int32">Party(no = 0, yes = 1)</data>
+    </Struct>
+  </Opcode>
+  
+  <Opcode id="0x1000006">
+    <name>[06]Set HP/MP</name>
+    <Struct>
+	  <data type="Int32">% of HP</data>
+      <data type="Int32">% of MP</data>
+      <data type="Int32">Party(no = 0, yes = 1)</data>
+    </Struct>
+  </Opcode>
+  
+  <Opcode id="0x1000007">
+    <name>[07]Teleport Zone</name>
+    <Struct>
+	  <data type="Int32">Map ID</data>
+      <data type="Int32">X Coord</data>
+	  <data type="Int32">Y Coord</data>      
+	  <data type="Int32">Party(no = 0, yes = 1)</data>
+    </Struct>
+  </Opcode>
+  
+  <Opcode id="0x1000008">
+    <name>[08]Spawn</name>
+    <Struct>
+	  <data type="Int32">MonsterSN</data>
+      <data type="Int32">Amount</data>
+	  <data type="Int32">Who</data>      
+	  <data type="Int32">Map</data>
+	  <data type="Int32">X</data>
+      <data type="Int32">Y</data>
+	  <data type="Int32">Range</data>      
+	  <data type="Int32">TeamNo</data>
+    </Struct>
+  </Opcode>
+  
+  <Opcode id="0x1000009">
+    <name>[09]Trigger</name>
+    <Struct>
+	  <data type="Trigger">trigger</data>
+    </Struct>
+  </Opcode>
+  
+  <Opcode id="0x100000A">
+    <name>[10]Reset stat</name>
+    <Struct>
+	  <data type="Int16">Stat ID</data>
+      
+    </Struct>
+  </Opcode>
+  
+  <Opcode id="0x100000C">
+    <name>[12]Npc Say...</name>
+    <Struct>
+	  <data type="Int32">Command(Chat=0, Shout = 1, AncZ=2, AncC=3, AncC=4)</data>
+      <data type="Int32">StringID</data>
+    </Struct>
+  </Opcode>
+  
+  <Opcode id="0x100000D">
+    <name>[13]No name</name>
+    <Struct>
+	  <data type="Int32">Who</data>
+      <data type="Int32">TriggerID</data>
+	  <data type="Trigger">NextTrigger(same that trigger before)</data>
+    </Struct>
+  </Opcode>
+  
+  <Opcode id="0x100000E">
+    <name>[14]Skill</name>
+    <Struct>
+	  <data type="Byte">Action(remove=0, add=1)</data>
+	  <data type="Byte">Unknow</data>
+	  <data type="Byte">Unknow</data>
+	  <data type="Byte">Unknow</data>
+      <data type="Int32">Skill ID</data>
+	</Struct>
+  </Opcode>
+ 
+
+<Opcode id="0x1000010">
+    <name>[16]No name</name>
+    <Struct>
+	  <data type="Int16">Group ID</data>
+	</Struct>
+  </Opcode>  
+
+<Opcode id="0x1000012">
+    <name>[18]No name</name>
+    <Struct>
+	  <data type="Int32">Str ID</data>
+	  <data type="Int16">Str ID</data>
+	</Struct>
+  </Opcode>     
+  
+  <Opcode id="0x1000013">
+    <name>[19]Force Team</name>
+    <Struct>
+	  <data type="Int16">Zone ID</data>
+	  <data type="Int16">Team ID</data>
+	</Struct>
+  </Opcode>     
+  
+  <Opcode id="0x1000014">
+    <name>[20]No name</name>
+    <Struct>
+	  <data type="Int32">No type</data>
+	</Struct>
+  </Opcode> 
+  
+  <Opcode id="0x1000015">
+    <name>[21]Teleport XY</name>
+    <Struct>
+	  <data type="Int32">X</data>
+	  <data type="Int32">Y</data>	  
+	</Struct>
+  
+  </Opcode> 
+    <Opcode id="0x1000016">
+    <name>[22]No name</name>
+    <Struct>
+	  <data type="Int16">Unknow</data>
+	  <data type="Byte">Unknow</data>	  
+	</Struct>
+  </Opcode>
+  
+  <Opcode id="0x1000018">
+    <name>[24]Clan funds</name>
+    <Struct>
+	  <data type="Int32">Value</data>
+	  <data type="Operator">Operator</data>	  
+	</Struct>
+  </Opcode>
+  
+  
+  <Opcode id="0x1000019">
+    <name>[25]Clan Points</name>
+    <Struct>
+	  <data type="Int16">Value</data>
+	  <data type="Operator16">Operator</data>	  
+	</Struct>
+  </Opcode>
+  
+   <Opcode id="0x100001A">
+    <name>[26]Clan Skill</name>
+    <Struct>
+	  <data type="Int16">SkillNo</data>
+	  <data type="Int16">Action (remove = 0 , add = 1)</data>	  
+	</Struct>
+  </Opcode>
+  
+  <Opcode id="0x100001B">
+    <name>[27]Clan Contribution</name>
+    <Struct>
+	  <data type="Int16">Value</data>
+	  <data type="Operator16">Operator</data>	  
+	</Struct>
+  </Opcode>
+  
+  <Opcode id="0x100001C">
+    <name>[28]Teleport Range</name>
+    <Struct>
+	  <data type="Int32">Range</data>
+	  <data type="Int32">Zone ID</data>	  
+	  <data type="Int32">X Coord</data>
+	  <data type="Int32">Y Coord</data>
+	</Struct>
+  </Opcode>
+
+  
+  
+  </Opcodes>
